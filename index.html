@@ -26,6 +26,107 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+	<style>
+     .skills-section{
+padding-top: 20px;
+}
+
+.skills-header{
+text-align: center;
+color: #fff;
+padding: 1rem;
+position: relative;
+}
+
+.skills-header:after{
+content: '';
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
+width: 100px;
+height: 4px;
+background-color: #2ecc71;
+border-radius: 2px;
+}
+
+.skills-container{
+display: grid;
+grid-tempLate-columns: repeat(5, 1fr);
+justify-content:center;
+align-items:center;
+text-align: center;
+grid-gap:1rem;
+padding: 1rem 80px;
+font-size: 1.2rem;
+}
+.skills-box{
+padding: 1rem;
+color: #000;
+cursor:pointer;
+}
+.skills-box:hover > .skills-title: after, 
+.skills-box:hover > .skills-title: before{
+width: 30px;
+}
+.skills-box:hover .skills-img{
+transform: translateX(-20px);
+}
+
+.skills-title{
+display:flex;
+flex-direction: column;
+align-items:center;
+padding: 0.5rem;
+margin-bottom: 0.5rem;
+position: relative;
+}
+
+
+.skills-icons{
+width:50px;
+z-index:2;
+}
+
+.skills-img{
+width:90px;
+height:90px;
+position: relative;
+border-radius: 45px;
+background-color: #fff;
+display:flex;
+justify-content:center;
+align-items:center;
+transition: .5s;
+}
+
+.skills-img:after{
+content: '';
+position:absolute;
+top:0;
+left: 0;
+width:50%;
+height:90px;
+background: rgba(100, 100, 100, 0.5);
+border-radius: 45px 0 0 45px;
+}
+.skills-title h3{
+color: #fff;
+margin-top: 0.5rem;
+}
+@media screen and (max-width:990px){
+ .skills-container{
+ grid-tempLate-columns: repeat(2, 1fr);
+ padding: 2rem 50px;
+ }
+}
+
+@media screen and (max-width:650px){
+ .skills-container{
+ grid-tempLate-columns:2fr;
+ padding: 2rem 50px;
+ }
+}</style>
 
 </head>
 
@@ -278,7 +379,137 @@
 
             </div>
 
-        
+        <!-- section blog -->
+         <section>
+
+            <div class="container">
+
+                <!-- section title -->
+                <h2 class="section-title wow fadeInUp">My Skills</h2>
+
+                
+
+                <div class="row blog-wrapper">
+
+                    <div class="skills-section">
+                        
+                         <div class="skills-container">
+                           
+                           
+                    
+                           
+                            <div class="skills-box">
+                           <div class="skills-title">
+                           <div class="skills-img">
+                            <img src="https://opencv.org/wp-content/uploads/2020/07/OpenCV_logo_black-2.png" alt="" class="skills-icons">
+                            </div>
+                            <h3>OpenCV</h3>
+                            </div>
+                            
+                           </div>
+                           
+                          <div class="skills-box">
+                           <div class="skills-title">
+                           <div class="skills-img">
+                            <img src="https://aihubprojects.com/wp-content/uploads/2021/05/PngItem_310639.png" alt="" class="skills-icons">
+                            </div>
+                            <h3>PyTorch</h3>
+                            </div>
+                            
+                           </div>  
+                           
+                           
+                             <div class="skills-box">
+                           <div class="skills-title">
+                           <div class="skills-img">
+                            <img src="https://www.omni-academy.com/wp-content/uploads/2020/03/Amazon-SageMaker-icon-dark-png.e203fb1adf7486fc9e9de4ae84745d032703e65e.png">
+                            </div>
+                            <h3>SageMaker</h3>
+                            </div>
+                            
+                           </div>
+                            
+                          <div class="skills-box">
+                           <div class="skills-title">
+                           <div class="skills-img">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/1024px-Scikit_learn_logo_small.svg.png"     alt="" class="skills-icons">
+                            </div>
+                             <h3>Scikit Learn</h3>
+                            </div>
+                           </div>
+                           
+                          
+                            <div class="skills-box">
+                           <div class="skills-title">
+                           <div class="skills-img">
+                            <img src="https://www.pngkey.com/png/full/96-961478_in-order-to-show-how-holoviews-works-well.png" alt="" class="skills-icons">
+                            </div>
+                            <h3>Numpy</h3>
+                            </div>
+                             
+                           </div>
+                           
+                           
+                            <div class="skills-box">
+                           <div class="skills-title">
+                           <div class="skills-img">
+                            <img src="https://cdn.shortpixel.ai/spai/w_300+q_lossy+ret_img+to_webp/https://www.numfocus.org/wp-content/uploads/2016/07/pandas-logo-300.png" alt="" class="skills-icons">
+                            </div>
+                            <h3>Pandas</h3>
+                            </div>
+                           </div>
+                           
+                              <div class="skills-box">
+                           <div class="skills-title">
+                           <div class="skills-img">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Created_with_Matplotlib-logo.svg">
+                            </div>
+                            <h3>Matplotlib</h3>
+                            </div>
+                            
+                           </div>
+                           
+                              
+                        <div class="skills-box">
+                           <div class="skills-title">
+                           <div class="skills-img">
+                            <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="" class="skills-icons">
+                            </div>
+                            <h3>Git</h3>
+                            </div>
+                            
+                           </div>    
+                             
+                           
+                    <div class="skills-box">
+                           <div class="skills-title">
+                           <div class="skills-img">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/150px-Tux.svg.png" alt="" class="skills-icons">
+                            </div>
+                            <h3>Linux</h3>
+                            </div>
+                            
+                           </div>  
+
+                           <div class="skills-box">
+                            <div class="skills-title">
+                            <div class="skills-img">
+                             <img src="https://allcoursefree.com/wp-content/uploads/2022/02/docker.png"     alt="" class="skills-icons">
+                             </div>
+                              <h3>Docker</h3>
+                             </div>
+                            </div>
+                    
+                    </div>
+                    </div>
+                    
+                    
+
+                </div>
+
+            </div>
+
+        </section>
 
         <!-- section experience -->
         <section id="experience">
